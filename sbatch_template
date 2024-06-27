@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# {NAME}.s
+#
+# Sergio Alías-Segura
+#
+#SBATCH -J {NAME}
+#SBATCH -p short
+#SBATCH --mem 1G
+#SBATCH -t 0-01:00:00 # (D-HH:MM:SS)
+#SBATCH -o {NAME}.%j.out
+#SBATCH -e {NAME}.%j.err
+
+hostname; pwd; date
+
+time
